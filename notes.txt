@@ -1,0 +1,94 @@
+We use react router dom
+context folder for context apis
+pages folder for ecommerce pages
+**we have to install es7 extension to create automatic 
+component in react
+in assets we have all images and in all_products.js we have all products data
+in json format
+
+the term is cursor not curser
+
+*main css styling is done for cart count refer nav-car-count**
+
+we will start using hooks in update menu variable
+
+we will also use ternary operator to indicate which page we are
+
+next we add google fonts poppins
+
+shop page is home page and shopcategory page is where we render different
+categories mens,womens,kids
+
+we wil wrap all components with browserrouter
+
+after navbar which is available for all components
+we add routes
+
+within routes we add route with path and element,so if someone comes to / path
+shop page will be rendered
+in element attribute of route we set props according to path
+
+in link tags in navbar.jsx makesure we place the html thing in between link and /link
+
+Note while adding divisions in footer keep Note
+of where you are adding in case of footer-copyright
+we are adding this div after footer it's not included in footer div else it won't appear
+as expected
+
+In shopcontext first we are exporting a const not default
+atlast we are sending the default
+
+In product.jsx we are converting productId into Number using Number()
+
+In product.jsx we should use {ShopContext} if we use just ShopContext for import it cannot be extracted as required
+
+In relatedproducts.css we use background instead of color in hr
+
+In Item.jsx we add {onClick=window.scrollTo(0,0)} where it takes to the pages on which we clicked used in relatedproducts**
+
+refer to ...prev,[itemId]:prev[itemId]+1 in ShopContext.jsx
+
+After 2:59:05 we are making the website responsive
+
+In shopcategory product.item we have set margin as auto to set both left and right margins to be equal.
+
+In product display when width<800 we used flex-direction of column-reverse
+
+***Backend***
+For backend we use express.js for creating the api
+and json web token for user authentication system
+and database will be mongodb and to store images we will use multer(will be stored in backend)
+and we will use cors to add permission to application to access the backend
+
+
+To access database we use mongoose.connect
+in that we pass the url string we obtained from
+cluster in internet and atlast we add 'e-commerce' to the path
+
+In addproduct we have to set key as 'product' or else it won't work
+
+in addproduct.jsx we use label with htmlFor here we add file-input
+
+***Note***
+While doing add product we have to keep our index.js of backend active in port 3000 if not it won't work properly
+
+In listproduct.jsx we use key={index} as it is definitely needed
+
+In listproduct.jsx we add <> </> at start and end of return() since we require <hr/> at end after div tag
+
+We have also set limit of cart to 300 in index.js in '/signup' for each user.
+
+To get the data from input we use onchange in input tag
+
+After signup if it is success we get a token and it is passed to localstorage
+using setitem
+
+You can check the auth-token which is stored locally at clicking '>>' next to console present in 'inspect' option
+there localstorage will be present click the icon next to local storage you can check there
+
+In shopcontext.jsx we set in headers the accept as application/form-data
+whereas in index.js of backend we set is as application/json
+
+
+Modifications:
+I should have replaced 'applications/json' with 'applications/form-data' in '/login' and '/signup' in loginsignup.jsx .**
