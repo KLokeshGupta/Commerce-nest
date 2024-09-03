@@ -13,7 +13,7 @@ app.use(cors()); //express app connected to 3000 port
 
 //Database connection with mongoDB
 
-mongoose.connect("mongodb+srv://lokeshguptakusumanchi:Xiaoyan123@cluster0.bicxhbk.mongodb.net/e-commerce");
+mongoose.connect("mongodb+srv://lokeshguptakusumanchi:***@cluster0.bicxhbk.mongodb.net/e-commerce");
 
 //API creation
 
